@@ -10,7 +10,7 @@ int main()
     cin>>v2;
     cout<<" Ingrese el ultimo numero por favor: ";
     cin>>v3;
-    if (v1==v2 && v2==v3)
+    if (v1==v2 && v1==v3)
     {
         cout<<" Los valores: "<<v1<<", "<<v2<<" y "<<v3<<" Son iguales"<<endl;
     }
@@ -43,11 +43,3 @@ int main()
     }
     return 0;
 }
-        
-        
-
-
-
-
-
-
