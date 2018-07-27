@@ -34,8 +34,8 @@ int MenuHotel(int hab, int t, int total, int est)
     cout << endl;
     cout << "Genial, ud a elegido la habitacion de una estrella. " << endl;
     cout << "Ud tiene como beneficios: " << endl;
-    cout << "* 1 Cama y Sabanas. " << endl;
-    cout << "* 1 Cocina (2 hornillas). " << endl;
+    cout << "* 1 Cama. " << endl;
+    cout << "* 1 Televisor. " << endl;
     cout << "* Servicio telefonico. " << endl;
     cout << "El precio de alquiler por noche en esta habitacion es de: " << est << " Bsf. " << endl;
     cout << "Desea usted servicio de restaurant?." <<endl;
@@ -82,8 +82,8 @@ int MenuHotel(int hab, int t, int total, int est)
     cout << endl;
     cout << "Genial usted ha elegido la habitacion 3 Estrellas. " << endl;
     cout << "Ud posee como beneficios: " << endl;
-    cout << "* 2 Camas, Sabanas y Cobijas. " << endl;
-    cout << "* Cocina (4 hornillas). " << endl;
+    cout << "* 2 Camas. " << endl;
+    cout << "* 1 Nevera. " << endl;
     cout << "* Servicio telefonico. " << endl;
     cout << "* Servicio Wifi. " << endl;
     cout << "* 1 televisor. " << endl;
