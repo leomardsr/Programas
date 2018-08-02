@@ -14,9 +14,9 @@ int main()
   cout << "El resultado de la suma es: " << sum << endl;
   return 0;
 }
-  float hacerSum(float v1, float v2)
-  {
-    float r;
-    r=v1+v2;
-    return r;
-  }
+float hacerSum(float v1, float v2)
+{
+  float r;
+  r=v1+v2;
+  return r;
+}

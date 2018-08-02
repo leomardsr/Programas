@@ -10,11 +10,8 @@ int main ()
     cin  >> e;
     for (int i=1 ; i<=e ; i++)
     {
-        r=b*l;
-        l=r;
+        r=r*b;
     }
     cout << " El resultado es: " << r << endl;
     return 0;
 }
-
-
