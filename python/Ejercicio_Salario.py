@@ -24,4 +24,6 @@ else:
 	salario_total = horas_trabajadas*salario_hora
 	Print ("Su salario bruto es de: ", salario_bruto, "$ semanales")
 	print ("Usted ha trabajado ", horas_trabajadas)
+	print ("Su salario en esta semana sera de: ", salario_total)
+
 

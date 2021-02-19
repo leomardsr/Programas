@@ -10,7 +10,7 @@ numero_hermanos = int(input("Introduce el numero de hermanos que tienes (sin con
 print (numero_hermanos)
 
 salario_familiar = float(input("Ingresa el salario bruto familiar (en dolares): "))
-print (salariorio_familiar)
+print (salario_familiar)
 
 if distancia_escuela > 40 and numero_hermanos > 2 or salario_familiar <= 30000:
 	print ("Tienes derecho a beca")
