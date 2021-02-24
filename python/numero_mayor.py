@@ -8,7 +8,6 @@ while yo == True:
 	numero = (input("Ingrese un numero: "))
 	if numero!="done":
 		print ("Si desea terminar con el programa escriba 'done'")
-	# print ("Si desea terminar con el programa escriba 'done'")
 	if numero=="done":
 		break;
 	intentos+=1
