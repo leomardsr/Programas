@@ -1,11 +1,12 @@
 # Programa que simula una calculadora básica
-
+import math
 print ('Bienvenido a la calculadora.')
 print ('1. Suma')
 print ('2. Resta')
 print ('3. Multiplicacion')
 print ('4. Division')
 print ('5. Potencia')
+print ("6. Raíz cuadrada")
 
 
 def suma(sumando1, sumando2):
@@ -32,8 +33,17 @@ def potencia(base, exponente):
     resultado = base**exponente
     return resultado
 
+def raiz(radicando):
+    raiz = math.sqrt(radicando)
+    return raiz
 
-operacion = int(input('Cual de estas operaciones desea realizar?: '))
+try:
+    operacion = int(input('Cual de estas operaciones desea realizar?: '))
+
+except:
+    print ("El caracter que ha introducido es incorrecto")
+
+    ,
 if operacion == 1:
     print('ingrese los valores que desea sumar: ')
     suma = suma(
@@ -68,3 +78,8 @@ elif operacion == 5:
         float(input('Base: ')), float(input('Ahora el Exponente: '))
     )
     print(potencia)
+
+elif operacion == 6:
+    radicando=float(input("ingrese el numero al cual se le extraerá la raíz: "))
+    raizcuadrada=raiz(radicando)
+    print (raizcuadrada)
