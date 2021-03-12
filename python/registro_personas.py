@@ -34,6 +34,7 @@ class datos_personas():
 			libreta_de_datos["Telefono"] =int(input("Introduce tu numero telefonico: "))
 		except:
 			print ("El Valor ingresado es incorrecto. Debe introducir solo numeros.")
+			pass
 
 
 		libreta_de_datos["Correo"] =input("Ingresa tu correo electrónico: ")

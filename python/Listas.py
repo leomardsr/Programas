@@ -16,7 +16,7 @@ print (lista.index("yo")) #para saber el indice de el elemento de la lista
 
 print ("yo" in lista)#dice si el elemento se encuentra en la lista (solo con verdadero o falso)
 
-print (lista[:])
+print (lista[1:3])
 
 notas = [True, False, 5, "20"] 
 
