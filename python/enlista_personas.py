@@ -18,7 +18,9 @@ def menu():
 
 	elif opcion == 1:"""
 
+
 lista_personas = []
+
 class Personas():
 	nombre = ""
 	apellido = ""
@@ -37,6 +39,7 @@ class Personas():
 
 	def Listado(self):
 		print("")
+		lista_personas.append("---------")
 		lista_personas.append(self.nombre)
 		lista_personas.append(self.apellido)
 		lista_personas.append(self.cedula)
@@ -44,12 +47,13 @@ class Personas():
 		lista_personas.append(self.correo)
 		
 	
-	def Impresion(self):
+	def Impresion(elemento):
 		
 		print("")
 		print("Personas registradas: ")
-		print (lista_personas)
-		print("")
+		for i in lista_personas:
+			yield i
+		print(i)
 
 persona=Personas()
 persona.Registro()
