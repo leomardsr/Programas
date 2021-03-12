@@ -7,8 +7,15 @@ class miCarro():
 	def arrancar(self,arrancamos):
 		self.enmarcha=arrancamos
 
-		if(self.enmarcha):
+		if (self.enmarcha):
+			chequeo=self.__chequeo_interno()
+
+		if(self.enmarcha and chequeo):
 			return "El coche esta en marcha"
+
+		elif (self.enmarcha and chequeo == False):
+			return "Algo ha ido mal en el chequeo. No podemos arrancar"
+
 		else:
 			return "El coche esta parado."
 
@@ -16,11 +23,23 @@ class miCarro():
 	def estado(self):
 		print ("El carro tiene un largo de ", self.largo_chasis, "cm. A su vez tiene un anco de ", self.ancho_chasis,
 			"cm. Y también posee ", self.ruedas," Ruedas.")
-		
+
+	def __chequeo_interno(self):
+		print ("Realizando chequeo interno.")
+
+		self.gasolina="ok"
+		self.aceite="ok"
+		self.puertas="cerradas"
+
+		if (self.gasolina=="ok" and self.aceite=="ok" and self.puertas=="cerradas"):
+			return True
+		else:
+			return False
+
+
+		sss
 carro1=miCarro()
 
-#print ("El largo de mi carro es de ", carro1.largo_chasis)
-#print ("El Carro tiene ", carro1.ruedas, " Ruedas")
 print(carro1.arrancar(True))
 
 carro1.estado()
@@ -31,8 +50,7 @@ print ("")
 
 carro2=miCarro()
 
-#print ("El Largo de mi carro 2 es de ", carro2.largo_chasis)
-#print ("El carro 2 tiene ", carro2.ruedas, " ruedas")
-print (carro2.arrancar(False))
+print (carro2.arrancar(True))
+
 carro2.estado()
 
