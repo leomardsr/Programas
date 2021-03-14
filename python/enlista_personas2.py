@@ -1,8 +1,6 @@
 print ("Bienvenido. Para hacer su registro rellene el formulario: ")
 
-def elementos():
-	pass
-
+lista_personas = []
 
 def menu():
 	print("Seleccione cual de las opciones desea realizar: ")
@@ -11,15 +9,14 @@ def menu():
 	print("3. Añadir")
 	print("4. Editar")
 	print("5. Ubicar")
-	pass
+	
 
-	"""if opcion<1 or opcion>5 or opcion==str():
-		return "Cantidad inválida. Introduzca uno de los numeros que se indican."
+def Listado(person):
+		print("")
+		lista_personas.append(person)
 
-	elif opcion == 1:"""
 
 
-lista_personas = []
 
 class Personas():
 	nombre = ""
@@ -37,15 +34,7 @@ class Personas():
 		self.correo = input ("Correo: ")
 		
 
-	def Listado(self):
-		print("")
-		lista_personas.append("")
-		lista_personas.append(self.nombre)
-		lista_personas.append(self.apellido)
-		lista_personas.append(self.cedula)
-		lista_personas.append(self.telefono)
-		lista_personas.append(self.correo)
-
+	
 	def Eliminado(self):
 		print ("")
 
@@ -76,21 +65,11 @@ class Personas():
 		for i in lista_personas:
 			print (i)
 
-
 		
-
 persona=Personas()
 persona.Registro()
-persona.Listado()
+Listado(persona)
 #persona.Impresion(lista_personas)
-persona.Eliminado()
-persona.Impresion()
-
-
-
-
-
-	#print("")
-	#print("Personas registradas: ")
-	#print(lista_personas)"""
+#persona.Impresion()
+print (lista_personas)
 
