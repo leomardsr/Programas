@@ -37,8 +37,12 @@ while a:
 		print()
 		numero = float(input("Ingrese la cantidad de helados que desea comprar: "))
 		totalBS= numero*precio_helado
+		print ("")
+		print("---------------------------------------------------------------------------------------------------------------")
+		print("")
 		print ("El total de bolivares es de: ", totalBS, "bs. Por la compra de ", numero, " Helados.")
-
+		print("-")
+		print("---------------------------------------------------------------------------------------------------------------")
 	else:
 		continue;
 
