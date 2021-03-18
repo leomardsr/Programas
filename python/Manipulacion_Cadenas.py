@@ -20,4 +20,4 @@ if (int(edad)<18):
 	print("No puede pasar")
 
 else:
-	print("Puedes pasar.")
+	print("Puedes pasar.") 

@@ -52,10 +52,15 @@ def menu():
 			a=False
 
 		else:
-			print ("La opcion que ha seleccionado es inválida.")
-
+			print()
+			print(" ________________________________")
+			print("|                                |")
+			print("|                                |")
+			print("|        OPCION INVALIDA         |")
+			print("|                                |")
+			print("|________________________________|")
+			print()
+			print()
 menu()
-		
-
 
 
