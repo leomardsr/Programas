@@ -51,8 +51,7 @@ def delete():
 	op = op - 1
 	print()
 	people.pop(op)
-
-	show()
+    show()
 
 
 def show():
