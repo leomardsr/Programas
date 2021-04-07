@@ -95,15 +95,12 @@ def inventary():
             while w:
                 print ()
                 helado_inventario = Ice_Cream()
-                helado_inventario.amount = int(input("Ingrese la cantidad de \
-                    helados que hay: "))
-                helado_inventario.flavor = input("Ingrese el sabor del \
-                    helado: ")
+                helado_inventario.amount = int(input("Ingrese la cantidad de helados que hay: "))
+                helado_inventario.flavor = input("Ingrese el sabor del helado: ")
                 IceCream.append(helado_inventario)
                 print()
                 show()
-                op = input("Para Añadir, Editar o Eliminar alguno \
-                    escriba '0' : ")
+                op = input("Para Añadir, Editar o Eliminar alguno escriba '0' : ")
                 if op == "0":
                     w = False
                 else:
@@ -117,8 +114,7 @@ def inventary():
             position = int(input("Elije el elemento que deseas editar: "))-1
             print ()
             helado_inventario = Ice_Cream()
-            helado_inventario.amount = int(input("Ingrese la cantidad de \
-helados que hay: "))
+            helado_inventario.amount = int(input("Ingrese la cantidad de helados que hay: "))
             helado_inventario.flavor = input("Ingrese el sabor del helado: ")
             IceCream.pop(position)
             IceCream.insert(position, helado_inventario)
